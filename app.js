@@ -1,9 +1,9 @@
 function registration() {
-  var name = document.getElementById("t1").value;
-  var email = document.getElementById("t2").value;
-  var uname = document.getElementById("t3").value;
-  var pwd = document.getElementById("t4").value;
-  var cpwd = document.getElementById("t5").value;
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var uname = document.getElementById("username").value;
+  var pwd = document.getElementById("password").value;
+  var cpwd = document.getElementById("confirm_password").value;
 
   var pwd_expression =
     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
