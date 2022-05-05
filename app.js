@@ -33,9 +33,9 @@ function registration() {
     );
   } else if (pwd != cpwd) {
     alert("Password not Matched");
-  } else if (document.getElementById("t5").value.length < 6) {
+  } else if (document.getElementById("password").value.length < 6) {
     alert("Password minimum length is 6");
-  } else if (document.getElementById("t5").value.length > 12) {
+  } else if (document.getElementById("password").value.length > 12) {
     alert("Password max length is 12");
   } else {
     alert("Thank You for Registration & You are Redirecting to Portfolio");
