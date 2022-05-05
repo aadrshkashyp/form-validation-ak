@@ -5,7 +5,6 @@ function registration() {
   var pwd = document.getElementById("t4").value;
   var cpwd = document.getElementById("t5").value;
 
-  //email id expression code
   var pwd_expression =
     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
   var letters = /^[A-Za-z]+$/;
