@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css");
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center px-5 py-5"
+    >
+      <div
+        class="bg-gray-100 text-gray-500 rounded-2xl shadow-xl w-full overflow-hidden"
+        style="max-width: 1000px"
+      >
+        <div class="md:flex w-full">
+          <div class="hidden md:block w-1/2 bg-indigo-500">
+            <iframe
+              src="https://my.spline.design/portalcopy-b478854f47eca0a2d0aa73d9ea6356c3/"
+              frameborder="0"
+              width="100%"
+              height="100%"
+            ></iframe>
+          </div>
+          <div class="w-full md:w-1/2 py-10 px-5 md:px-10">
+            <div class="text-center mb-10">
+              <h1 class="font-bold text-3xl text-gray-900">REGISTER</h1>
+              <p>Enter your information to register</p>
+            </div>
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+              <tr>
+                <td class="leading-7 text-sm text-gray-600" align="right">
+                  Name :
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Enter Full Name here"
+                    id="t1"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+
+                  <small></small>
+                </td>
+              </tr>
+              <tr>
+                <td class="leading-7 text-sm text-gray-600" align="right">
+                  Email ID :
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Enter Email ID here"
+                    id="t2"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                  <small></small>
+                </td>
+              </tr>
+              <tr>
+                <td class="leading-7 text-sm text-gray-600" align="right">
+                  Username :
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Enter Username here"
+                    id="t3"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                  <small></small>
+                </td>
+              </tr>
+              <tr>
+                <td class="leading-7 text-sm text-gray-600" align="right">
+                  Password :
+                </td>
+                <td>
+                  <input
+                    type="password"
+                    placeholder="Enter Password here"
+                    id="t4"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                  <small></small>
+                </td>
+              </tr>
+              <tr>
+                <td class="leading-7 text-sm text-gray-600" align="right">
+                  Confirm Password :
+                </td>
+                <td>
+                  <input
+                    type="password"
+                    placeholder="Enter Password here"
+                    id="t5"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                  <small></small>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input
+                    type="submit"
+                    value="Create Account"
+                    class="btn w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    onclick="registration()"
+                  />
+                  <small></small>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10"
+    >
+      <div>
+        <a
+          title="Check My Portfolio"
+          href="https://www.aadarshkashyap.pw"
+          target="_blank"
+          class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+        >
+          <img
+            class="object-cover object-center w-full h-full rounded-full border-2 border-gray-300 bg-gray-900"
+            src="https://www.notion.so/image/https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F40b7bfab-f3b0-47d1-a4e6-36961aa40070%2Ficon.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20220504%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20220504T200644Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D2027d126c1cdb7a1a37e9e2898596da40adb3b3ebc5c88e415e1f6bfc0fd5f13%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject?table=block&id=2d84b04f-ae51-47dc-96ab-20bffb619a24&cache=v2"
+          />
+        </a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
